@@ -1,8 +1,8 @@
-body {
+.App {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 80vh;
 }
 
 :root {
@@ -93,6 +93,44 @@ body {
       bottom: -4%;
       border: 1rem solid black;
       z-index: -1;
+    }
+  }
+
+  .mouth {
+    position: absolute;
+    top: 52%;
+    left: 63%;
+    width: 2.5rem;
+    height: 1.5rem;
+    transform: translateX(-50%);
+    color: #000;
+    border: 0.625rem solid transparent;
+    border-top-color: currentColor;
+    border-radius: 41%;
+    transform: rotate(352deg);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 150%;
+      background: var(--cheek);
+      border-radius: 50%;
+      left: -400%;
+      transform: rotate(5deg);
+      top: -190%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 143%;
+      height: 120%;
+      background: var(--cheek);
+      border-radius: 50%;
+      right: -300%;
+      transform: rotate(353deg);
+      top: -170%;
     }
   }
 }
