@@ -2,7 +2,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 :root {
@@ -66,6 +66,32 @@ body {
       transform: rotate(215deg);
       border: 1rem solid black;
       right: -75%;
+      z-index: -1;
+    }
+  }
+
+  .foot {
+    &-left {
+      position: absolute;
+      width: 40%;
+      height: 18%;
+      background-color: var(--deep-pink);
+      border-radius: 44% 56% 63% 37% / 78% 59% 41% 22%;
+      left: 1%;
+      bottom: -6.5%;
+      border: 1rem solid black;
+      z-index: -1;
+    }
+
+    &-right {
+      position: absolute;
+      width: 40%;
+      height: 18%;
+      background-color: var(--deep-pink);
+      border-radius: 42% 58% 35% 65% / 54% 82% 18% 46%;
+      right: -2%;
+      bottom: -4%;
+      border: 1rem solid black;
       z-index: -1;
     }
   }
