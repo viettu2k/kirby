@@ -205,5 +205,37 @@
         left: -26%;
       }
     }
+
+    .inner {
+      position: absolute;
+      width: 60%;
+      height: 56%;
+      border-radius: 50%;
+      background-color: #000;
+      top: 25%;
+      left: 19%;
+
+      &:before {
+        content: "";
+        width: 105%;
+        height: 100%;
+        background-color: #0164c7;
+        position: absolute;
+        border-radius: 50%;
+        bottom: -20%;
+        z-index: -1;
+      }
+
+      &:after {
+        content: "";
+        width: 105%;
+        height: 102%;
+        background-color: white;
+        position: absolute;
+        border-radius: 50%;
+        top: -34%;
+        z-index: 0;
+      }
+    }
   }
 }
