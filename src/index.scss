@@ -1,0 +1,27 @@
+:root {
+  --pink: #ff9ec8;
+  --deep-pink: #f20079;
+  --shadow: #cb91b2;
+  --cheek: #e5649c;
+}
+
+.kirby {
+  width: 500px;
+  height: 432px;
+  background-color: var(--pink);
+  position: absolute;
+  border-radius: 50%;
+  border: 1rem solid black;
+
+  &:before {
+    content: "";
+    width: 118%;
+    height: 13.8%;
+    background-color: var(--shadow);
+    position: absolute;
+    bottom: -10%;
+    border-radius: 50%;
+    z-index: -2;
+    left: -7%;
+  }
+}
