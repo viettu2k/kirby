@@ -25,3 +25,27 @@
     left: -7%;
   }
 }
+
+.arm {
+  &-left {
+    width: 31%;
+    height: 32%;
+    background-color: var(--pink);
+    position: relative;
+    top: 44%;
+    border-radius: 50% 40%;
+    border: 1rem solid black;
+    left: -13.5%;
+
+    &:before {
+      content: "";
+      width: 70%;
+      height: 150%;
+      border-radius: 50%;
+      background-color: var(--pink);
+      position: absolute;
+      left: 47%;
+      top: -25%;
+    }
+  }
+}
