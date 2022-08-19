@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 :root {
   --pink: #ff9ec8;
   --deep-pink: #f20079;
@@ -24,28 +31,42 @@
     z-index: -2;
     left: -7%;
   }
-}
 
-.arm {
-  &-left {
-    width: 31%;
-    height: 32%;
-    background-color: var(--pink);
-    position: relative;
-    top: 44%;
-    border-radius: 50% 40%;
-    border: 1rem solid black;
-    left: -13.5%;
-
-    &:before {
-      content: "";
-      width: 70%;
-      height: 150%;
-      border-radius: 50%;
+  .arm {
+    &-left {
+      width: 31%;
+      height: 32%;
       background-color: var(--pink);
-      position: absolute;
-      left: 47%;
-      top: -25%;
+      position: relative;
+      top: 44%;
+      transform: rotate(342deg);
+      border-radius: 50% 40%;
+      border: 1rem solid black;
+      left: -13.5%;
+
+      &:before {
+        content: "";
+        width: 70%;
+        height: 150%;
+        border-radius: 50%;
+        background-color: var(--pink);
+        position: absolute;
+        left: 47%;
+        top: -25%;
+      }
+    }
+
+    &-right {
+      width: 31%;
+      height: 32%;
+      background-color: var(--pink);
+      position: relative;
+      top: 2%;
+      border-radius: 50% 40%;
+      transform: rotate(215deg);
+      border: 1rem solid black;
+      right: -75%;
+      z-index: -1;
     }
   }
 }
